@@ -140,4 +140,42 @@ describe("Integration: Ticket Lifecycle & AI Workflow", () => {
     expect(metrics.priority_distribution.urgent).toBe(1);
     expect(metrics.priority_distribution.medium).toBe(1);
   });
+
+  it("allows a human agent to override ticket priority and tracks audit trail", async () => {
+    // 1. Create a ticket initially marked as low priority
+    const ticket = localStore.createTicket({
+      title: "Delayed email notification",
+      customer_name: "Morgan Bailey",
+      customer_email: "morgan@example.com",
+      channel: "web_form",
+      message: "Notification emails are arriving with a 15-minute delay.",
+      status: "new",
+      priority: "low",
+      assigned_team: "unassigned",
+      is_demo: false,
+    });
+
+    expect(ticket.priority).toBe("low");
+
+    // 2. Execute priority override via reviewService
+    const reviewResult = await reviewService.handleReviewAction(ticket.id, {
+      action: "change_priority",
+      reviewer_name: "Lead Agent Jordan",
+      new_priority: "urgent",
+    });
+
+    // Verify review operation succeeded
+    expect(reviewResult.success).toBe(true);
+
+    // Fetch the updated ticket from persistence
+    const updatedTicket = localStore.getTicketById(ticket.id);
+    expect(updatedTicket?.priority).toBe("urgent");
+
+    // Verify audit trail logged the change
+    const priorityEvent = updatedTicket?.audit_events.find(
+      (e) => e.event_type === "priority_changed"
+    );
+    expect(priorityEvent).toBeDefined();
+    expect(priorityEvent?.actor_name).toBe("Lead Agent Jordan");
+  });
 });

@@ -14,7 +14,7 @@
 - [x] **Offline Deterministic Demo Mode**: Works 100% out-of-the-box without requiring API credentials or external cloud setup.
 - [x] **Prompt Engineering Documentation**: Comprehensive log in `docs/prompt-engineering-log.md` detailing iterations from v1.0.0 to v1.2.0.
 - [x] **Video Presentation Script**: 2-3 minute structured script prepared in `docs/demo-script.md`.
-- [x] **Automated Test Suite**: Vitest unit and integration test suite with 13 passing tests.
+- [x] **Automated Test Suite**: Vitest unit and integration test suite with 14 passing tests.
 - [x] **Production Compilation**: `npm run build` cleanly compiled 11/11 pages with zero errors.
 - [x] **Database Schema & Migrations**: Documented relational schema in `supabase/migrations/20261027000000_create_flowpilot_schema.sql`.
 - [x] **Zero Secrets Committed**: `.gitignore` excludes `.env*`, database keys, and sensitive tokens.

@@ -1,33 +1,62 @@
 {
   "tickets": [
     {
-      "title": "Outage query",
-      "customer_name": "User B",
-      "channel": "chat",
-      "message": "Server is crashing with 500 errors.",
-      "status": "resolved",
-      "priority": "urgent",
-      "assigned_team": "technical_support",
-      "is_demo": false,
-      "id": "8991dbc4-45b9-4fe2-8c06-91fa721bba15",
-      "created_at": "2026-10-27T16:48:16.491Z",
-      "updated_at": "2026-10-27T16:48:16.491Z"
-    },
-    {
-      "title": "Billing query",
-      "customer_name": "User A",
+      "title": "Delayed email notification",
+      "customer_name": "Morgan Bailey",
+      "customer_email": "morgan@example.com",
       "channel": "web_form",
-      "message": "Question regarding billing invoice.",
+      "message": "Notification emails are arriving with a 15-minute delay.",
       "status": "new",
-      "priority": "medium",
-      "assigned_team": "billing",
+      "priority": "urgent",
+      "assigned_team": "unassigned",
       "is_demo": false,
-      "id": "c8e6b1aa-a997-4542-8a06-02b9e8964bfb",
-      "created_at": "2026-10-27T16:48:16.491Z",
-      "updated_at": "2026-10-27T16:48:16.491Z"
+      "id": "0ac5782f-8b51-492a-a27c-c3c583dd520c",
+      "created_at": "2026-10-27T19:52:01.133Z",
+      "updated_at": "2026-10-27T19:52:01.133Z"
     }
   ],
   "ai_analyses": [],
-  "review_decisions": [],
-  "audit_events": []
+  "review_decisions": [
+    {
+      "ticket_id": "0ac5782f-8b51-492a-a27c-c3c583dd520c",
+      "ai_analysis_id": null,
+      "action": "change_priority",
+      "reviewer_name": "Lead Agent Jordan",
+      "edited_response": null,
+      "rejection_reason": null,
+      "note": null,
+      "previous_state": {
+        "status": "new",
+        "priority": "low",
+        "assigned_team": "unassigned"
+      },
+      "new_state": {
+        "priority": "urgent"
+      },
+      "id": "d9f723d6-89ab-4b27-a960-3d87c9ca0f2c",
+      "created_at": "2026-10-27T19:52:01.133Z"
+    }
+  ],
+  "audit_events": [
+    {
+      "ticket_id": "0ac5782f-8b51-492a-a27c-c3c583dd520c",
+      "event_type": "priority_changed",
+      "actor_type": "human_reviewer",
+      "actor_name": "Lead Agent Jordan",
+      "summary": "Lead Agent Jordan adjusted priority from LOW to URGENT",
+      "metadata": {
+        "previousState": {
+          "status": "new",
+          "priority": "low",
+          "assigned_team": "unassigned"
+        },
+        "newState": {
+          "priority": "urgent"
+        },
+        "action": "change_priority"
+      },
+      "id": "0ba17486-3cd0-4e44-b94c-422d50b029c4",
+      "created_at": "2026-10-27T19:52:01.133Z"
+    }
+  ]
 }

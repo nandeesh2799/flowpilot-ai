@@ -20,18 +20,18 @@ npm test
 
  RUN  v3.2.7 /home/nanu/Desktop/AI SKILL
 
- ✓ tests/unit/validation.test.ts (9 tests) 9ms
- ✓ tests/integration/ticket-workflow.test.ts (4 tests) 7ms
+ ✓ tests/unit/validation.test.ts (9 tests) 8ms
+ ✓ tests/integration/ticket-workflow.test.ts (5 tests) 7ms
 
  Test Files  2 passed (2)
-      Tests  13 passed (13)
-   Start at  22:18:15
-   Duration  1.21s (transform 134ms, setup 166ms, collect 265ms, tests 16ms, environment 908ms, prepare 565ms)
+      Tests  14 passed (14)
+   Start at  01:21:22
+   Duration  0.96s (transform 147ms, setup 126ms, collect 260ms, tests 15ms, environment 665ms, prepare 357ms)
 ```
 
 **Results**:
 - **Test Files**: 2 passed (100%)
-- **Total Tests**: 13 passed (100%)
+- **Total Tests**: 14 passed (100%)
 - **Failures**: 0
 
 ---
@@ -54,6 +54,7 @@ npm test
 2. `detects prompt injection attempt and flags security incident` — PASSED
 3. `handles human review: edits and approves suggested response, updates status` — PASSED
 4. `calculates dashboard metrics purely from stored ticket records` — PASSED
+5. `allows a human agent to override ticket priority and tracks audit trail` — PASSED
 
 ---
 

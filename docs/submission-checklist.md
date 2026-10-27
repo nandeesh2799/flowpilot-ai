@@ -27,7 +27,7 @@
 |---|---|---|---|
 | **1. Video Presentation** | Minimum 2 minutes covering AI tools, prompt engineering, approach, challenges, final outcome | Script in `docs/demo-script.md` | Ready to record |
 | **2. Prompt Documentation** | Document containing all prompts, significant revisions, and follow-up prompts | `docs/prompt-engineering-log.md` | Yes |
-| **3. Project Access Link** | Accessible link (GitHub repo, live application, or local run package) | Local runnable repository + Git commits | Yes |
+| **3. Project Access Link** | Accessible link (GitHub repo, live application, or local run package) | [https://github.com/nandeesh2799/flowpilot-ai](https://github.com/nandeesh2799/flowpilot-ai) | Yes |
 
 ---
 

@@ -1,0 +1,33 @@
+{
+  "tickets": [
+    {
+      "title": "Outage query",
+      "customer_name": "User B",
+      "channel": "chat",
+      "message": "Server is crashing with 500 errors.",
+      "status": "resolved",
+      "priority": "urgent",
+      "assigned_team": "technical_support",
+      "is_demo": false,
+      "id": "8991dbc4-45b9-4fe2-8c06-91fa721bba15",
+      "created_at": "2026-10-27T16:48:16.491Z",
+      "updated_at": "2026-10-27T16:48:16.491Z"
+    },
+    {
+      "title": "Billing query",
+      "customer_name": "User A",
+      "channel": "web_form",
+      "message": "Question regarding billing invoice.",
+      "status": "new",
+      "priority": "medium",
+      "assigned_team": "billing",
+      "is_demo": false,
+      "id": "c8e6b1aa-a997-4542-8a06-02b9e8964bfb",
+      "created_at": "2026-10-27T16:48:16.491Z",
+      "updated_at": "2026-10-27T16:48:16.491Z"
+    }
+  ],
+  "ai_analyses": [],
+  "review_decisions": [],
+  "audit_events": []
+}

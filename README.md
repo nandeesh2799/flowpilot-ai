@@ -1,13 +1,5 @@
 # FlowPilot AI — Intelligent Support Workflow Copilot
 
-> **Gokul Infocare Assessment Deliverable**  
-> **Role**: AI Growth & Automation Associate (WFH)  
-> **Domain**: Technology  
-> **Category**: Automation  
-> **Repository**: [https://github.com/nandeesh2799/flowpilot-ai](https://github.com/nandeesh2799/flowpilot-ai)  
-> **Submission Target**: `jobs@gokulinfocare.com`  
-
----
 
 ## 1. Executive Summary
 

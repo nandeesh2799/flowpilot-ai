@@ -128,3 +128,15 @@ To verify prompt injection defense in the live application:
 
 - **Outbound Dispatch**: The application drafts and approves customer responses, but does not auto-dispatch real emails to external mail servers without an explicitly configured transactional email service (e.g. Resend, SendGrid). This is an intentional human-in-the-loop safety boundary.
 - **Authentication**: In demo mode, tickets and review actions are open for evaluation. For multi-tenant enterprise deployment, Supabase Auth (Row-Level Security) can be activated using the provided schema.
+
+
+---
+
+## 👨‍💻 Author & Engineering Showcase
+
+**Nandeesh N K**  
+Full-Stack Developer & AI Systems Engineer — Bengaluru, India  
+- 🌐 **Interactive Portfolio:** [NandeeshOS (Live Demo)](https://nandeesh2799-portfolio.vercel.app)
+- 💼 **LinkedIn:** [linkedin.com/in/nandeesh-n-k-729773270](https://linkedin.com/in/nandeesh-n-k-729773270)
+- 🐙 **GitHub Profile:** [github.com/nandeesh2799](https://github.com/nandeesh2799)
+- 📫 **Direct Email:** [nandeeshnk506@gmail.com](mailto:nandeeshnk506@gmail.com)

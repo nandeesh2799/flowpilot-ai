@@ -1,5 +1,12 @@
 # FlowPilot AI — Intelligent Support Workflow Copilot
 
+[![CI Pipeline](https://github.com/nandeesh2799/flowpilot-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/nandeesh2799/flowpilot-ai/actions/workflows/ci.yml)
+![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white)
+![Vitest](https://img.shields.io/badge/Tests-14%20Passed-brightgreen?logo=vitest)
+![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)
+
 
 ## 1. Executive Summary
 

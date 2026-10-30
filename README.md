@@ -44,9 +44,10 @@
 
 ### Installation & Run Steps
 
-1. **Clone or Navigate to the Repository**:
+1. **Clone the Repository**:
    ```bash
-   cd "AI SKILL"
+   git clone https://github.com/nandeesh2799/flowpilot-ai.git
+   cd flowpilot-ai
    ```
 
 2. **Install Dependencies**:
@@ -91,6 +92,10 @@ npm run build
 
 # 4. Start Production Server
 npm start
+
+# 5. Run via Docker Container
+docker compose up --build
+# Open http://localhost:3000
 ```
 
 ---
